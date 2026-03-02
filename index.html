@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Houselift Home Services provides expert lawn maintenance, premium mobile detailing, and thorough house cleaning services in Southern California.">
+    <meta name="theme-color" content="#0f1419">
+    <title>Houselift Home Services - Complete Property and Vehicle Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #0f1419;
+            --primary-light: #f8f9fa;
+            --accent-teal: #4ecdc4;
+            --accent-sage: #7ba05b;
+            --accent-navy: #2c5f7a;
+            --text-dark: #1a1a1a;
+            --text-muted: #4b5563;
+            --border-soft: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        /* Skip to main content link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-dark);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            z-index: 10000;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Visually hidden but accessible to screen readers */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            color: var(--text-dark);
+            background: var(--primary-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            font-size: 1rem;
+        }
+
+        /* Respect user's motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            :root {
+                --text-muted: #2c2c2c;
+                --border-soft: #000000;
+            }
+            
+            .service-option {
+                border-width: 3px;
+            }
+            
+            button, a {
+                border: 2px solid currentColor;
+            }
+        }
+
+        /* Enhanced focus styles for accessibility */
+        *:focus-visible {
+            outline: 3px solid var(--accent-teal);
+            outline-offset: 2px;
+        }
+
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: 3px solid var(--accent-teal);
+            outline-offset: 2px;
+        }
+
+        /* Ensure minimum touch target size for mobile accessibility (44x44px) */
+        button,
+        a,
+        input[type="checkbox"],
+        input[type="submit"] {
+            min-height: 44px;
+        }
+        
+        .service-option {
+            min-height: 60px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-soft);
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-dark);
+        }
+
+        .nav-links .cta-button {
+            background: var(--primary-dark);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links .cta-button:hover {
+            background: var(--accent-navy);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Hero Section with Background */
+        .hero {
+            margin-top: 5rem;
+            padding: 8rem 2rem 6rem;
+            text-align: center;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            background-image: linear-gradient(rgba(248, 249, 250, 0.75), rgba(248, 249, 250, 0.80)), 
+                              url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&h=800&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+            letter-spacing: -0.01em;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-dark);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+            font-weight: 400;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
+        }
+
+        .btn-primary {
+            background: var(--primary-dark);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-navy);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:focus,
+        .btn-secondary:focus {
+            outline: 3px solid var(--accent-teal);
+            outline-offset: 2px;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-dark);
+            padding: 1rem 2.5rem;
+            border: 2px solid var(--primary-dark);
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-dark);
+            color: white;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            max-width: 1400px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .image-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            animation: fadeInScale 0.8s ease-out backwards;
+            height: 100%;
+        }
+
+        .image-card:nth-child(1) { animation-delay: 0.2s; }
+        .image-card:nth-child(2) { animation-delay: 0.4s; }
+        .image-card:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Services Section */
+        .services {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-soft);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease-out backwards;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .service-card:nth-child(1) { animation-delay: 0.2s; }
+        .service-card:nth-child(2) { animation-delay: 0.4s; }
+        .service-card:nth-child(3) { animation-delay: 0.6s; }
+
+        .service-card:hover,
+        .service-card:focus {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--accent-teal);
+            outline: none;
+        }
+
+        .service-card:focus {
+            outline: 3px solid var(--accent-teal);
+            outline-offset: 2px;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent-teal), var(--accent-navy));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: var(--accent-sage);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, var(--primary-dark), var(--accent-navy));
+            padding: 6rem 2rem;
+            text-align: center;
+            margin: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+
+        .quote-content {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .quote-section h2 {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: white;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .quote-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Form Section */
+        .form-section {
+            max-width: 700px;
+            margin: 4rem auto;
+            padding: 3rem 2rem;
+        }
+
+        .form-container {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-soft);
+        }
+
+        .form-section h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .service-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-option {
+            display: flex;
+            align-items: center;
+            padding: 1.25rem;
+            border: 2px solid var(--border-soft);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .service-option:hover {
+            border-color: var(--accent-teal);
+            background: rgba(78, 205, 196, 0.05);
+        }
+
+        .service-option input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 1rem;
+            cursor: pointer;
+            accent-color: var(--accent-navy);
+        }
+
+        .service-option label {
+            flex: 1;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .service-option .icon {
+            font-size: 1.5rem;
+            opacity: 0.6;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--border-soft);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Work Sans', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-teal);
+            box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
+        }
+
+        .form-group input.error,
+        .form-group textarea.error {
+            border-color: #ef4444;
+            background-color: rgba(239, 68, 68, 0.05);
+        }
+
+        .form-group input.error:focus,
+        .form-group textarea.error:focus {
+            border-color: #ef4444;
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            width: 100%;
+            background: var(--primary-dark);
+            color: white;
+            padding: 1.25rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .submit-button:hover {
+            background: var(--accent-navy);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .submit-button:focus {
+            outline: 3px solid var(--accent-teal);
+            outline-offset: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1.5rem;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
+            .hero {
+                padding: 4rem 1.5rem 3rem;
+                margin-top: 5rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">Houselift Home Services</div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">Complete property<br>and vehicle care.</h1>
+        <p class="hero-subtitle">
+            Serving Southern California with Expert lawn maintenance, premium mobile detailing, 
+            and thorough house cleaning. One reliable team for your three essential needs.
+        </p>
+        <div class="hero-buttons" role="group" aria-label="Call to action buttons">
+            <a href="#quote" class="btn-primary" aria-label="Request a free quote">
+                Request a Quote
+                <span aria-hidden="true">→</span>
+            </a>
+            <a href="#services" class="btn-secondary">View Services</a>
+        </div>
+    </section>
+
+    <div class="image-grid" role="region" aria-label="Service showcase images">
+        <div class="image-card">
+            <img src="https://images.unsplash.com/photo-1584738766473-61c083514bf4?w=800&h=600&fit=crop&q=80" 
+                 alt="Well-maintained green lawn with neatly trimmed edges in front of residential house"
+                 loading="lazy">
+        </div>
+        <div class="image-card">
+            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&h=600&fit=crop&q=80" 
+                 alt="Sparkling clean luxury car exterior after professional detailing service"
+                 loading="lazy">
+        </div>
+        <div class="image-card">
+            <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=800&h=600&fit=crop&q=80" 
+                 alt="Spotless clean modern home interior with organized living room"
+                 loading="lazy">
+        </div>
+        <div class="image-card">
+            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&h=600&fit=crop&q=80" 
+                 alt="Professional HVAC technician servicing air conditioning unit"
+                 loading="lazy">
+        </div>
+    </div>
+
+    <section id="services" class="services" aria-labelledby="services-heading">
+        <h2 id="services-heading" class="visually-hidden">Our Services</h2>
+        <article class="service-card" onclick="scrollToQuote()" onkeydown="if(event.key==='Enter' || event.key===' ') {event.preventDefault(); scrollToQuote();}" tabindex="0" role="button" aria-label="Request quote for Lawncare services">
+            <div class="service-icon" aria-hidden="true">🌿</div>
+            <h3>Lawncare</h3>
+            <p>Complete lawn maintenance including mowing, edging, fertilization, and seasonal cleanups to keep your yard pristine.</p>
+            <ul class="service-features" aria-label="Lawncare service features">
+                <li>Lawn Mowing</li>
+                <li>Weed Control</li>
+            </ul>
+        </article>
+
+        <article class="service-card" onclick="scrollToQuote()" onkeydown="if(event.key==='Enter' || event.key===' ') {event.preventDefault(); scrollToQuote();}" tabindex="0" role="button" aria-label="Request quote for Mobile Detailing services">
+            <div class="service-icon" aria-hidden="true">🚗</div>
+            <h3>Mobile Detailing</h3>
+            <p>We come to you. Professional interior and exterior detailing services that restore your vehicle's showroom shine.</p>
+            <ul class="service-features" aria-label="Mobile Detailing service features">
+                <li>Interior and Exterior Deep Clean</li>
+                <li>Wheel and Tire Shine</li>
+            </ul>
+        </article>
+
+        <article class="service-card" onclick="scrollToQuote()" onkeydown="if(event.key==='Enter' || event.key===' ') {event.preventDefault(); scrollToQuote();}" tabindex="0" role="button" aria-label="Request quote for House Cleaning services">
+            <div class="service-icon" aria-hidden="true">🏠</div>
+            <h3>House Cleaning</h3>
+            <p>Thorough residential cleaning services. From standard tidying to deep cleaning, we ensure a healthy home environment.</p>
+            <ul class="service-features" aria-label="House Cleaning service features">
+                <li>Standard & Deep Clean</li>
+                <li>Move-in/Move-out</li>
+            </ul>
+        </article>
+
+        <article class="service-card" onclick="scrollToQuote()" onkeydown="if(event.key==='Enter' || event.key===' ') {event.preventDefault(); scrollToQuote();}" tabindex="0" role="button" aria-label="Request quote for HVAC services">
+            <div class="service-icon" aria-hidden="true">❄️</div>
+            <h3>HVAC</h3>
+            <p>Professional HVAC tune ups and air purifier installations to keep your home's air quality optimal and systems running efficiently.</p>
+            <ul class="service-features" aria-label="HVAC service features">
+                <li>HVAC Tune Ups</li>
+                <li>Air Purifier Installs</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="quote-section" id="quote" aria-labelledby="quote-heading">
+        <div class="quote-content">
+            <h2 id="quote-heading">Get a free estimate</h2>
+            <p>Select the services you need and tell us a bit about yourself.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Subject to availability in your area.</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <form class="form-container" action="https://formspree.io/f/xlgbplvn" method="POST" aria-label="Request a quote form">
+            <h3>SELECT SERVICES</h3>
+            
+            <fieldset class="service-options" style="border: none; padding: 0;">
+                <legend class="visually-hidden">Choose services you need</legend>
+                <div class="service-option">
+                    <input type="checkbox" id="lawncare" name="services" value="Lawncare" aria-describedby="lawncare-desc">
+                    <label for="lawncare">Lawncare</label>
+                    <span class="icon" aria-hidden="true">🌿</span>
+                    <span id="lawncare-desc" class="visually-hidden">Professional lawn maintenance services</span>
+                </div>
+                <div class="service-option">
+                    <input type="checkbox" id="detailing" name="services" value="Mobile Detailing" aria-describedby="detailing-desc">
+                    <label for="detailing">Mobile Detailing</label>
+                    <span class="icon" aria-hidden="true">🚗</span>
+                    <span id="detailing-desc" class="visually-hidden">Professional vehicle detailing services</span>
+                </div>
+                <div class="service-option">
+                    <input type="checkbox" id="cleaning" name="services" value="House Cleaning" aria-describedby="cleaning-desc">
+                    <label for="cleaning">House Cleaning</label>
+                    <span class="icon" aria-hidden="true">🏠</span>
+                    <span id="cleaning-desc" class="visually-hidden">Professional residential cleaning services</span>
+                </div>
+                <div class="service-option">
+                    <input type="checkbox" id="hvac" name="services" value="HVAC" aria-describedby="hvac-desc">
+                    <label for="hvac">HVAC</label>
+                    <span class="icon" aria-hidden="true">❄️</span>
+                    <span id="hvac-desc" class="visually-hidden">HVAC tune ups and air purifier installation services</span>
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Full Name <span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Jane Doe" required aria-required="true" aria-invalid="false" aria-describedby="name-error">
+                    <span id="name-error" class="visually-hidden" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address <span aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="jane@example.com" required aria-required="true" aria-invalid="false" aria-describedby="email-error">
+                    <span id="email-error" class="visually-hidden" role="alert"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number <span aria-label="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required aria-required="true" aria-invalid="false" aria-describedby="phone-format phone-error">
+                    <span id="phone-format" class="visually-hidden">Enter a 10-digit US phone number</span>
+                    <span id="phone-error" class="visually-hidden" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="address">Property Address <span aria-label="required">*</span></label>
+                    <input type="text" id="address" name="address" placeholder="123 Main St, City, Zip" required aria-required="true" aria-invalid="false" aria-describedby="address-error">
+                    <span id="address-error" class="visually-hidden" role="alert"></span>
+                </div>
+            </div>
+
+            <div class="form-group" id="sqft-group" style="display: none;">
+                <label for="sqft">Home Square Footage <span aria-label="required when house cleaning is selected">*</span></label>
+                <input type="number" id="sqft" name="square_footage" placeholder="e.g. 2000" min="1" aria-describedby="sqft-help sqft-error" aria-invalid="false">
+                <span id="sqft-help" class="visually-hidden">Required when House Cleaning service is selected</span>
+                <span id="sqft-error" class="visually-hidden" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="details">Additional Details</label>
+                <textarea id="details" name="details" placeholder="Any specific requirements..." aria-describedby="details-help"></textarea>
+                <span id="details-help" class="visually-hidden">Optional field for any additional information or special requests</span>
+            </div>
+
+            <button type="submit" class="submit-button" aria-label="Submit quote request">
+                Request Quote
+                <span aria-hidden="true">✉</span>
+            </button>
+        </form>
+    </section>
+    </main>
+
+    <script>
+        // Function to scroll to quote section
+        function scrollToQuote() {
+            const quoteSection = document.querySelector('#quote');
+            if (quoteSection) {
+                quoteSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Show/hide square footage field based on House Cleaning checkbox
+        const cleaningCheckbox = document.getElementById('cleaning');
+        const sqftGroup = document.getElementById('sqft-group');
+        const sqftInput = document.getElementById('sqft');
+        
+        cleaningCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                sqftGroup.style.display = 'flex';
+                sqftInput.required = true; // Make it required when visible
+                // Smooth fade in animation
+                sqftGroup.style.opacity = '0';
+                setTimeout(() => {
+                    sqftGroup.style.transition = 'opacity 0.3s ease';
+                    sqftGroup.style.opacity = '1';
+                }, 10);
+            } else {
+                sqftGroup.style.opacity = '0';
+                sqftInput.required = false; // Remove required when hidden
+                sqftInput.classList.remove('error'); // Remove error state
+                setTimeout(() => {
+                    sqftGroup.style.display = 'none';
+                }, 300);
+            }
+        });
+
+        // Form validation
+        const form = document.querySelector('.form-container');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+        const addressInput = document.getElementById('address');
+
+        // Create ARIA live region for announcements
+        const liveRegion = document.createElement('div');
+        liveRegion.setAttribute('role', 'status');
+        liveRegion.setAttribute('aria-live', 'polite');
+        liveRegion.setAttribute('aria-atomic', 'true');
+        liveRegion.className = 'visually-hidden';
+        liveRegion.id = 'form-announcements';
+        document.body.appendChild(liveRegion);
+
+        // Phone number formatting and validation
+        phoneInput.addEventListener('input', function(e) {
+            // Remove all non-numeric characters
+            let value = e.target.value.replace(/\D/g, '');
+            
+            // Limit to 10 digits
+            value = value.substring(0, 10);
+            
+            // Format as (XXX) XXX-XXXX
+            if (value.length >= 6) {
+                value = `(${value.substring(0, 3)}) ${value.substring(3, 6)}-${value.substring(6)}`;
+            } else if (value.length >= 3) {
+                value = `(${value.substring(0, 3)}) ${value.substring(3)}`;
+            } else if (value.length > 0) {
+                value = `(${value}`;
+            }
+            
+            e.target.value = value;
+            
+            // Remove error styling if we now have 10 digits
+            const phoneDigits = e.target.value.replace(/\D/g, '');
+            if (phoneDigits.length === 10) {
+                e.target.classList.remove('error');
+            }
+        });
+
+        form.addEventListener('submit', function(e) {
+            // Remove previous error states
+            const allInputs = [nameInput, emailInput, phoneInput, addressInput];
+            allInputs.forEach(input => {
+                input.classList.remove('error');
+                input.setAttribute('aria-invalid', 'false');
+                const errorSpan = document.getElementById(input.id + '-error');
+                if (errorSpan) errorSpan.textContent = '';
+            });
+            sqftInput.classList.remove('error');
+            sqftInput.setAttribute('aria-invalid', 'false');
+
+            let hasError = false;
+            const emptyFields = [];
+            const errorMessages = [];
+
+            // Check required fields
+            if (!nameInput.value.trim()) {
+                nameInput.classList.add('error');
+                nameInput.setAttribute('aria-invalid', 'true');
+                document.getElementById('name-error').textContent = 'Name is required';
+                emptyFields.push(nameInput);
+                errorMessages.push('Full Name');
+                hasError = true;
+            }
+            if (!emailInput.value.trim()) {
+                emailInput.classList.add('error');
+                emailInput.setAttribute('aria-invalid', 'true');
+                document.getElementById('email-error').textContent = 'Email is required';
+                emptyFields.push(emailInput);
+                errorMessages.push('Email Address');
+                hasError = true;
+            }
+            
+            // Validate phone number has exactly 10 digits
+            const phoneDigits = phoneInput.value.replace(/\D/g, '');
+            if (phoneDigits.length !== 10) {
+                phoneInput.classList.add('error');
+                phoneInput.setAttribute('aria-invalid', 'true');
+                document.getElementById('phone-error').textContent = 'Phone must be 10 digits';
+                if (emptyFields.length === 0 || emptyFields[0] !== phoneInput) {
+                    emptyFields.push(phoneInput);
+                    errorMessages.push('Phone Number');
+                }
+                hasError = true;
+            }
+            
+            if (!addressInput.value.trim()) {
+                addressInput.classList.add('error');
+                addressInput.setAttribute('aria-invalid', 'true');
+                document.getElementById('address-error').textContent = 'Address is required';
+                emptyFields.push(addressInput);
+                errorMessages.push('Property Address');
+                hasError = true;
+            }
+
+            // Check square footage if House Cleaning is selected
+            if (cleaningCheckbox.checked) {
+                if (!sqftInput.value || sqftInput.value <= 0) {
+                    sqftInput.classList.add('error');
+                    sqftInput.setAttribute('aria-invalid', 'true');
+                    document.getElementById('sqft-error').textContent = 'Square footage is required';
+                    emptyFields.push(sqftInput);
+                    errorMessages.push('Square Footage');
+                    hasError = true;
+                }
+            }
+
+            // If there are errors, prevent submission and focus on first error
+            if (hasError) {
+                e.preventDefault();
+                
+                // Announce errors to screen readers
+                const errorCount = emptyFields.length;
+                liveRegion.textContent = `Form has ${errorCount} error${errorCount > 1 ? 's' : ''}. Please correct: ${errorMessages.join(', ')}.`;
+                
+                // Scroll to form section
+                form.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+
+                // Focus on first empty field after scrolling
+                setTimeout(() => {
+                    if (emptyFields.length > 0) {
+                        emptyFields[0].focus();
+                    }
+                }, 500);
+            } else {
+                // Announce successful submission
+                liveRegion.textContent = 'Form submitted successfully';
+            }
+        });
+
+        // Remove error state when user starts typing
+        [nameInput, emailInput, phoneInput, addressInput, sqftInput].forEach(input => {
+            input.addEventListener('input', function() {
+                this.classList.remove('error');
+                this.setAttribute('aria-invalid', 'false');
+                const errorSpan = document.getElementById(this.id + '-error');
+                if (errorSpan) errorSpan.textContent = '';
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
